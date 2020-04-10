@@ -1469,7 +1469,9 @@ function FlatpickrInstance(
         if (
           self.timeContainer !== undefined &&
           self.minuteElement !== undefined &&
-          self.hourElement !== undefined
+          self.hourElement !== undefined && 
+          self.input.value !== "" &&
+          self.input.value !== undefined
         ) {
           updateTime();
         }
